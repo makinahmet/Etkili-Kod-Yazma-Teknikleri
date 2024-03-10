@@ -7,10 +7,7 @@
 
     <body class="max-width-4 mt-5">
         <!-- NAVBAR -->
-        <div class="row flex-container bg-blue-4 radius-5">
-            <div class="col-2 justify-content-center vertical-align-center"><img class="logo" src="images/abmLogo.png"></div>
-            <div class="col-10 justify-content-center vertical-align-center"><h2 class="text-white">Etkili Kod Yazma Teknikleri</h2></div>
-        </div>
+        <div id="navbar" class="row flex-container bg-blue-4 radius-5"></div>
         <!-- NAVBAR -->
 
         <!-- PAGE -->
@@ -43,7 +40,7 @@
                     &nbsp;&nbsp;&nbsp;Örnneğin iki ismi olan biri için, <b>ad = "ahmet",ad2 = "bünyamin"</b> gibi bir kullanım yanlış anlaşılmaya yol açabilir.
                     Sağlıklı kullanım <b>ad = "ahmet", ikinciAd = "bünyamin"</b> şeklindedir.<br />
                     <br />
-                    <b class="fs-xl mt-20">2.Metot isimlendirmeleri</b><br />
+                    <b class="fs-xl">2.Metot isimlendirmeleri</b><br />
                     &nbsp;&nbsp;&nbsp;Metotlar genelde bir iş yaparlar ve sonuç yada çıktı verirler. Dolayısı ile bir metoda vereceğiniz ismin fiil yada
                     fiil cümlesi olması çok yerinde olacaktır. Örneğin 3 ile 5 i toplayan bir metota <b>topla()</b> gibi bir isim vermek
                     yerinde olacaktır.<br />
@@ -52,14 +49,27 @@
                     bir yazı içindeki boşlukları temizleyen bir fonksiyona <b>temizle()</b> yerine <b>boslukTemizle()</b> gibi 
                     daha anlaşılabilir bir isim verilebilir.<br />
                     <br />
-                    <b class="fs-xl mt-20">3.Sınıf/Arayüz isimlendirmeleri</b><br />
+                    <b class="fs-xl">3.Sınıf/Arayüz isimlendirmeleri</b><br />
                     &nbsp;&nbsp;&nbsp;Sınıflar yada arayüzler genelde birden çok özelliğe sahip olan kavramlardır. Metotlar gibi bir işlem yapmazlar 
-                    ancak çoğaltılabilir yada örneklenebilirler. Dolayısı ile sınıflar isimlendirilirken, isim cümleleri kullanmak
+                    ancak çoğaltılabilir yada örneklenebilirler. Dolayısı ile sınıflar isimlendirilirken, <b>isim cümleleri</b> kullanmak
                     daha yerinde olacaktır.<br />
                     <br />
-                    Bir de sınıf oluştururken genel kavramlar için sınıf oluşturmaya dikkat edilmelidir. Örneğin bir petshoptaki 
+                    &nbsp;&nbsp;&nbsp;Bir de sınıf oluştururken genel kavramlar için sınıf oluşturmaya dikkat edilmelidir. Örneğin bir petshoptaki 
                     hayvanların her biri için <b>kedi, köpek, kuş, balık</b> gibi sınıflar oluşturmaktansa, <b>hayvan</b> isimli bir
-                    sınıf oluşturup gerektiğinde kedi isminde bir sınıf hayvan sınıfından türetilmelidir.
+                    sınıf oluşturup gerektiğinde kedi isminde bir sınıf hayvan sınıfından türetilmelidir.<br />
+                    <br />
+                    <b class="fs-xl">4.Kısaltma kullanmaktan kaçının</b><br />
+                    &nbsp;&nbsp;&nbsp;Her ne kadar kısaltmalar kullanışlı gibi görünsede okunabilirliği azaltmakta ve telafuzu zorlaştırmaktadır.
+                    Örneğin <b>kulAdi = "Ahmet"</b> pekte anlaşılır değil. Bunun yerine <b>kullaniciAdi = "Ahmet"</b> gibi bir isim daha sağlıklıdır.
+                    Yada <b>kmlkNo = 12345678910</b> yerine <b>kimlikNo = 12345678910</b> daha mantıklıdır.<br />
+                    <br />
+                    <b class="fs-xl">5.Gereksiz bağlamlardan kaçının</b><br />
+                    &nbsp;&nbsp;&nbsp;Aynı amaç için birden fazla değişken oluşturmak yerine o amaç için bir sınıf oluşturmak daha yerinde bir çözümdür.
+                    Örneğin <b>il, ilce, postaKodu, ulke</b> gibi değişkenler <b>adres</b> sınıfına tanımlanabilir. Yani ana programınızda
+                    aynı iş için kullandığınız değişkenleri sınıflara bölmeniz daha sağlıklı olacaktır.<br />
+                    <br />
+                    <b class="fs-xl">6.Zamandan kaçmayın</b><br />
+                    Son olarak isimlendirme yaparken acele etmeyin. Çünkü iyi isimler seçmmek zaman alır ancak gerekenden fazla tasarruf sağlar.
                 </div>
             </div>
         </div>
